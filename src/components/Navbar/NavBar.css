@@ -1,0 +1,137 @@
+.navbar{
+  padding: 10px 20px;
+  position: relative;
+  /* top: 0; */
+  /* width: 100%; */
+  /* height: 58px; */
+  display: flex;
+  justify-content: space-between;
+  background-color: #0b0f1f;
+  color: white;
+  z-index: 1001;
+  align-items: center;
+  height: 50px;
+}
+.navbar > ul{
+  justify-content: space-between;
+  list-style: none;
+  display: flex;
+  width: 25%;
+  min-width: 350px;
+  max-width: 500px;
+  /* position: fixed; */
+}
+.navbar a{
+  text-decoration: none;
+  color:white;
+}
+
+.navbar .actions{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+.navbar .actions button{
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar .actions ul{
+  list-style: none;
+}
+#list-roll-down{
+  width: 200px;
+  height: 20px;
+  background-color: green;
+  opacity: 0.2;
+  transition: all .4s;
+}
+#list-roll-down.is-active{
+  height: 150px;
+opacity:1;
+}
+.close button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  position: absolute;
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+.user-icon{
+  position: relative;
+  font-size: 22px;
+}
+.user-icon .list-items {
+  box-shadow: 0 3px 7px -4px ;
+  font-size: 18px;
+  position: absolute;
+  left: -100px;
+  width: 130px;
+  z-index: 1;
+  background: white;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+}
+.user-icon .list-items li{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 3px;
+}
+.user-icon .list-items li:hover{
+  color: white;
+  background-color: var(--green);
+}
+.burger-icon{
+  display: none;
+  font-size: 26px;
+}
+.side-nav{
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 250px;
+  /* height: calc(100%); */
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  font-size: 22px;
+  padding: 20px 20px;
+  /* display: none; */
+  transition: 0.5s;
+  left: -250px;
+  box-shadow: 0 0 15px -5px black;
+  color: black;
+}
+.side-nav ul{
+  list-style: none;
+  line-height: 50px;
+}
+.side-nav button{
+  border: none;
+  background: none;
+  font-size: 22px;
+}
+.side-nav a{
+  text-decoration: none;
+  color: black;
+}
+.side-nav li:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px){
+  .burger-icon,.side-nav{
+    display: block;
+  }
+  .navbar > ul{
+    display: none;
+  }
+  .actions :nth-last-child(1){
+    display: none;
+  }
+}

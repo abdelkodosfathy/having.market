@@ -1,0 +1,19 @@
+.input-field input{
+  display: block;
+  width: 100%;
+  padding-left: 10px;
+}
+.input-field {
+  width: 100%;
+
+}
+input:active, input{
+  outline: none;
+  border: none;
+}
+dialog input{
+  margin-bottom: 10px;
+  height: 40px;
+  background: rgb(245, 245, 245);
+  border-bottom: solid 2px gray;
+}

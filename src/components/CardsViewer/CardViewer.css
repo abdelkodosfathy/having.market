@@ -1,0 +1,94 @@
+.card-viewer {
+  /* display: flex; */
+
+  display: grid;
+  grid-template-columns: 45% 55%;
+  /* grid-template-rows: 70px calc(100% - 60px); */
+  grid-column-gap: 0px;
+  background: var(--blue);
+}
+
+@media screen and (min-width: 1255px) {
+  .grid-container {
+    max-height: calc(100svh - 70px);
+    overflow-y: scroll;
+    margin: 10px 0;
+  }
+  .card-viewer {
+    grid-column-gap: 10px;
+    padding: 0 10px;
+  }
+  .grid-container::-webkit-scrollbar {
+    width: 4px;
+  }
+  .my-view {
+    overflow-y: scroll;
+    max-height: calc(100svh - 50px);
+  }
+}
+.show-sidebar {
+  position: absolute;
+  /* width: 100%; */
+  /* margin: auto; */
+  /* padding: 10px 6px; */
+  z-index: 9;
+  top: 10px;
+  left: 10px;
+}
+.show-sidebar button {
+  border-radius: 50%;
+  width: 100%;
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background: var(--dark-blue);
+  color: white;
+  /* border: 2px solid var(--green); */
+  font-weight: bold;
+  font-size: 18px;
+}
+@media screen and (max-width: 1255px) {
+  .card-viewer {
+    /* max-height: calc(100svh - 50px); */
+    width: 100%;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+    background: rgb(237, 246, 252);
+    scroll-padding-top: 50px; /* Adjust this value according to your requirement */
+  }
+  .card-viewer.user {
+    max-height: calc(100svh - 110px);
+  }
+  .blured {
+    /* filter: blur(5px); */
+  }
+  .card-viewer::-webkit-scrollbar {
+    width: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-viewer {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+.grid-container > p {
+  text-align: center;
+  width: 100%;
+}
+.sidebar-features {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+
+.empty-data {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}

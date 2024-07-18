@@ -1,0 +1,13 @@
+:root {
+  --green: #3aa856;
+  --blue: #edf6fc;
+  --light-gray: #d3d3d3;
+  --light-red: rgb(238, 100, 100);
+  --dark-blue: #0b0f1f;
+}
+
+body {
+  /* min-width: 1000px; */
+  /* height: 100vh; */
+  background-color: rgb(255, 255, 255);
+}

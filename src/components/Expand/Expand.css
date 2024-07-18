@@ -1,0 +1,54 @@
+.expand-card-header {
+  height: 40px;
+  cursor: pointer;
+}
+
+.expand-card {
+  position: relative;
+  /* border-radius: 5px; */
+  /* border-bottom: 1px solid var(--light-gray); */
+  transition: 0.3s ease;
+  /* color: red; */
+  height: 55px; /* Adjust this value as per your content */
+  /* overflow-y: hidden; */
+  
+}
+.expand-card h2{
+  display: flex;
+  justify-content: space-between;
+}
+.expand-card h2::selection{
+  color: black;
+}
+.expand-card span{
+  display: inline-block;
+}
+.expand-card-content{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-end;
+}
+.expand-card-content button{
+}
+.expand-card:after{
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0;
+  content: "";
+  background: var(--light-gray);
+  transition: 0.5s ease;
+  height: 1px;
+}
+
+.expand-card.expanded {
+  height: auto;
+  padding-bottom: 10px;
+  /* Adjust this value as per your content */
+}
+
+/* .expand-card:not(.expanded):hover {
+  background: var(--green);
+  color: white;
+  } */

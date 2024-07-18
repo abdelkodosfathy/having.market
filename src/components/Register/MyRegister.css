@@ -1,0 +1,11 @@
+.register{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+.register .row{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}
